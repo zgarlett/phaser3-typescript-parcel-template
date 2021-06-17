@@ -19,7 +19,8 @@
 		},
 		"typeRoots": [
 			"node_modules/@types",
-			"node_module/phaser/types"
+			"node_module/phaser/types",
+			"node_modules/@develephant/types-phaser"
 		],
 		"types": [
 			"phaser"

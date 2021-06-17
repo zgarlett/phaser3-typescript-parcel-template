@@ -25,6 +25,7 @@
 		"typescript": "^3.8.3"
 	},
 	"dependencies": {
+		"@develephant/types-phaser": "^1.0.1",
 		"phaser": "^3.55.2"
 	},
 	"parcelCleanPaths": [
