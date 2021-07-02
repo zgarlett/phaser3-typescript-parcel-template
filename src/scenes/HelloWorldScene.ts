@@ -1,4 +1,5 @@
 import Phaser from 'phaser'
+import { SceneHelper } from '~/helpers/SceneHelper';
 
 
 export default class HelloWorldScene extends Phaser.Scene
@@ -6,6 +7,7 @@ export default class HelloWorldScene extends Phaser.Scene
     private map: Phaser.Tilemaps.Tilemap | undefined;
     private marker: Phaser.GameObjects.Graphics | undefined;
     private propertiesText;
+    private helper: SceneHelper | undefined;
 
 	constructor()
 	{
@@ -14,9 +16,9 @@ export default class HelloWorldScene extends Phaser.Scene
 
 	preload()
     {
-        this.load.tilemapTiledJSON('map', 'assets/tile_properties.json');
-        this.load.image('tiles', 'assets/gridtiles.png');
         
+        this.helper = new SceneHelper();
+        this.helper.initializeAssets(this);
         
     }
 

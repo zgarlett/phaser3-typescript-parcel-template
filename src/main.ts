@@ -1,18 +1,25 @@
 import Phaser from 'phaser'
 
+import Multi from './scenes/Multi'
+import World from './scenes/OdyWorld';
+import Games from './scenes/Game';
 import HelloWorldScene from './scenes/HelloWorldScene'
 
 const config: Phaser.Types.Core.GameConfig = {
 	type: Phaser.AUTO,
-	width: 800,
-	height: 600,
+	width: 1200,
+	height: 800,
 	physics: {
 		default: 'arcade',
 		arcade: {
-			gravity: { y: 200 }
+			gravity: { y: 0 }
 		}
 	},
-	scene: [HelloWorldScene]
+	scale: {
+        mode: Phaser.Scale.FIT,
+        autoCenter: Phaser.Scale.CENTER_BOTH
+    },
+	scene: [Games]
 }
 
 export default new Phaser.Game(config)
