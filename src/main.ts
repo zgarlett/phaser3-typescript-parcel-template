@@ -22,4 +22,11 @@ const config: Phaser.Types.Core.GameConfig = {
 	scene: [Games]
 }
 
-export default new Phaser.Game(config)
+export default new Phaser.Game(config);
+
+
+export function GameHandler() {
+	const game = new Phaser.Game(config);
+	game.scene.start('Games');
+}
+

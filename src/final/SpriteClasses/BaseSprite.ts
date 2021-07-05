@@ -64,7 +64,6 @@ export class BaseSprite extends Phaser.Physics.Arcade.Sprite {
     }
 
     public getDirection(): Direction{
-        console.log(`SPRITE DIRECTION ${this.direction}`);
         return this.direction;
     }
 

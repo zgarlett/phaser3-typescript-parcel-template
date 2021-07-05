@@ -27,7 +27,8 @@
 	"dependencies": {
 		"@develephant/types-phaser": "^1.0.1",
 		"matter": "^0.2.0",
-		"phaser": "^3.55.2"
+		"phaser": "^3.55.2",
+		"prettier": "^2.3.2"
 	},
 	"parcelCleanPaths": [
 		"dist"
